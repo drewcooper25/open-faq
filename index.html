@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>BIG OPEN Survey FAQs</title>
         <link rel=”stylesheet” type=”text/css” href=”style.css” />
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="w3-colors-flat.css">
         <script type="text/javascript">
+        //Function for unfolding 
         function toggle(control){
             var elem = document.getElementById(control);
             if(elem.style.display == "none"){
@@ -30,7 +31,8 @@
         </div></details>
         
         <a name="support_open"></a>
-        <div class="scrollblock block-support_open w3-panel w3-flat-turquoise">
+        <div class="scrollblock block-support_open w3-panel open-orange">
+            <!--<a style="text-decoration: none;" href="javascript:toggle('<div id>')">-->
             <a style="text-decoration: none;" href="javascript:toggle('work_with_OPEN_team')"><h2>How can I support the work of the OPEN team?</h2></a>
             <div id="work_with_OPEN_team" style="display: none">
             <ul>
@@ -54,11 +56,13 @@
         </div>
         
         <a name="non_loop_non_diy"></a>
-        <div class="scrollblock block-non_loop_non_diy">
-            <h2>I am using a closed-loop system, but it is not DIY/open source. 
+        <div class="scrollblock block-non_loop_non_diy w3-panel w3-green">
+            <a style="text-decoration: none;" href="javascript:toggle('non_loop_non_diy')"><h2>I am using a closed-loop system, but it is not DIY/open source. 
                 I am not using any loop/do-it-yourself artificial pancreas system (DIYAPS).
-                Can I participate in your study?</h2>
+                Can I participate in your study?</h2></a>
+            <div id="non_loop_non_diy">
             <p>Yes! We are also looking for participants who are looping with a commercial loop and for participants who are not looping at all. Read more here: Who can participate…</p>
+        </div>
         </div>
         
         <a name="participate"></a>
