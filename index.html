@@ -4,7 +4,19 @@
         <meta charset="utf8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>BIG OPEN Survey FAQs</title>
-        <link rel=”stylesheet” type=”text/css” href=”/Users/user/Code/open-faq/style.css” />
+        <link rel=”stylesheet” type=”text/css” href=”style/style.css” />
+        <link rel="stylesheet" href="style/w3.css">
+        <link rel="stylesheet" href="style/w3-colors-flat.css">
+        <script type="text/javascript">
+        //Function for unfolding 
+        function toggle(control){
+            var elem = document.getElementById(control);
+            if(elem.style.display == "none"){
+                elem.style.display = "block";
+            }else{
+                elem.style.display = "none";
+            }
+        }</script>
     </head>    
     <body>
         <div class="scrollblock block-title">
@@ -13,14 +25,18 @@
         </div>
         
         <a name="purpose"></a>
-        <div class="scrollblock block-purpose">
-            <h2>What is the purpose of your study?</h2>
+        <div class="scrollblock block-purpose w3-panel open-blue">
+            <a style="text-decoration: none;" href="javascript:toggle('purpose')"><h2>What is the purpose of your study?</h2> </a>
+            <div id="purpose" style="display: none;">
             <p>We want to find out if the use of do-it-yourself artificial pancreas systems (DIYAPS; open source loop systems) has an influence on the health and well-being of people with diabetes. Additionally, we want to examine the challenges associated with building DIYAPS, and why some people choose not to use DIYAPS. </p>
+        </div>
         </div>
         
         <a name="support_open"></a>
-        <div class="scrollblock block-support_open">
-            <h2>How can I support the work of the OPEN team?</h2>
+        <div class="scrollblock block-support_open w3-panel open-orange">
+            <!--<a style="text-decoration: none;" href="javascript:toggle('<div id>')">-->
+            <a style="text-decoration: none;" href="javascript:toggle('work_with_OPEN_team')"><h2>How can I support the work of the OPEN team?</h2></a>
+            <div id="work_with_OPEN_team" style="display: none">
             <ul>
                 <li>Participate in our study on DIYAPS by completing the OPEN survey.</li>
                 <li>Join Open Humans and link your account to the OPEN project in order to enable us to message you anonymously, e.g. for follow-up studies.</li>
@@ -31,24 +47,30 @@
                 <li>Share the URL to our website (link to according website page) with friends who might be interested, e.g. via e-mail.</li>    
             </ul>
         </div>
+        </div>
         
         <a name="non_EU_participants"></a>
-        <div class="scrollblock block-non_EU_participants">
-            <h2>I don’t live in Europe. Can I still participate in your study?</h2>
+        <div class="scrollblock block-non_EU_participants w3-panel w3-red">
+            <a style="text-decoration: none;" href="javascript:toggle('non_EU_participants')"><h2>I don’t live in Europe. Can I still participate in your study?</h2></a>
+            <div id="non_EU_participants" style="display: none;">
             <p>Of course! EU-funded doesn’t mean that we are restricted to Europe. This is a <strong>global study</strong> — the more people participate, the better it will be!</p>
+        </div>
         </div>
         
         <a name="non_loop_non_diy"></a>
-        <div class="scrollblock block-non_loop_non_diy">
-            <h2>I am using a closed-loop system, but it is not DIY/open source. 
+        <div class="scrollblock block-non_loop_non_diy w3-panel w3-green">
+            <a style="text-decoration: none;" href="javascript:toggle('non_loop_non_diy')"><h2>I am using a closed-loop system, but it is not DIY/open source. 
                 I am not using any loop/do-it-yourself artificial pancreas system (DIYAPS).
-                Can I participate in your study?</h2>
+                Can I participate in your study?</h2></a>
+            <div id="non_loop_non_diy" style="display: none;">
             <p>Yes! We are also looking for participants who are looping with a commercial loop and for participants who are not looping at all. Read more here: Who can participate…</p>
+        </div>
         </div>
         
         <a name="participate"></a>
-        <div class="scrollblock block-participate">
-            <h2>Who can participate in your study?</h2>
+        <div class="scrollblock block-participate w3-panel open-yellow">
+            <a style="text-decoration: none;" href="javascript:toggle('participate')"><h2>Who can participate in your study?</h2></a>
+            <div id="participate" style="display: none;">
             <p>We are looking for:</p>
             <ul>
                 <li>users of open source loop / do-it-yourself artificial pancreas systems (DIYAPS): Adults ( 18+ years) and Teenagers (13-17 years; with parental permission)</li>
@@ -59,31 +81,40 @@
                 <li>users of commercial closed-loop systems (18+ years)</li>
             </ul>
         </div>
+        </div>
         
         <a name="2_year_olds"></a>
-        <div class="scrollblock block-2_year_olds">
-            <h2>My child is younger than 2 years and I would like to participate on their behalf.</h2>
+        <div class="scrollblock block-2_year_olds w3-panel open-green">
+            <a style="text-decoration: none;" href="javascript:toggle('2_year_olds')"><h2>My child is younger than 2 years and I would like to participate on their behalf.</h2></a>
+            <div id="2_year_olds" style="display: none;">
             <p>We are very sorry but it is not possible to participate on behalf of your child if they are younger than 2 years old. This is because certain questionnaires are not available for children this young.</p>
+        </div>
         </div>
         
         <a name="openloop_diyaps"></a>
-        <div class="scroll block block-openloop_diyaps">
-            <h2>I am using a DIYAPS in open-loop mode. Can I participate?</h2>
+        <div class="scroll block block-openloop_diyaps w3-panel open-navy">
+            <a style="text-decoration: none;" href="javascript:toggle('openloop_diyaps')"><h2>I am using a DIYAPS in open-loop mode. Can I participate?</h2></a>
+            <div id="openloop_diyaps" style="display: none;">
             <p>Yes! If you haven't closed the loop (yet), you can still participate in our study. During the questionnaire, you will get the opportunity to specify the system you are using.</p>
+        </div>
         </div>
         
         <a name="anonymity"></a>
-        <div class="scrollblock block-anonymity">
-            <h2>Can I participate in your research study anonymously or do I have to give my name?</h2>
+        <div class="scrollblock block-anonymity w3-panel open-orange">
+            <a style="text-decoration: none;" href="javascript:toggle('anonymity')"><h2>Can I participate in your research study anonymously or do I have to give my name?</h2></a>
+            <div id="anonymity" style="display: none;">
             <p>We want you to participate anonymously. If you have read the information sheet and decided to take part in our survey, you will first be given a participant ID which guarantees your anonymity in the survey.</p>
             <p>In case you decide to also join Open Humans and link your account to us, we can contact you anonymously without accessing any of your personal information on Open Humans.</p>
             <p>If you have uploaded or decide to now upload your CGM device data to Open Humans and think this is a good opportunity to share it or some of it from there with us, we will protect your data.</p>
         </div>
+        </div>
         
         <a name="survey_time"></a>
-        <div class="scrollblock block-survey_time">
-            <h2>How much time will it take to complete the survey?</h2>
+        <div class="scrollblock block-survey_time w3-panel open-blue">
+            <a style="text-decoration: none;" href="javascript:toggle('survey_time')"><h2>How much time will it take to complete the survey?</h2></a>
+            <div id="survey_time" style="display: none;">
             <p>The time needed to complete the survey depends on the type of participant. We have several short questionnaires for you which should take approximately 30 minutes to complete. You can always have a break and come back to where you left off in the questionnaires. For this you will need your participant ID.</p>
+        </div>
         </div>
         
         <a name="participant_id"></a>
