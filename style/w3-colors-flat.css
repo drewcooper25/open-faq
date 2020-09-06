@@ -1,3 +1,8 @@
+/*
+
+Color schemes for Text and boxes.
+
+*/
 .w3-flat-turquoise
 {color:#fff;background-color:#1abc9c}
 .w3-flat-emerald
@@ -48,3 +53,5 @@
 {color:#fff;background-color: #70AD47}
 .open-navy
 {color:#fff;background-color: #454746}
+.open-text
+{color:#ED7D31;background-color: #ffffff}
